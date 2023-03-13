@@ -7,6 +7,10 @@
 var app = require('../app');
 var debug = require('debug')('student-list:server');
 var http = require('http');
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://127.0.0.1:27017/Student_job_Portel')
+  .then(() => console.log('Connected!'));
 
 /**
  * Get port from environment and store in Express.
