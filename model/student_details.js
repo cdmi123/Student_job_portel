@@ -2,15 +2,15 @@ const mongoose = require('mongoose');
 
 /* Student Details */
 
-const Student_model = new mongoose.Mongoose.Schema({
+const Student_model = new mongoose.Schema({
 
     name: { type: String},
-    surname: { type: Number},
-    fathername: { type: String},
+    surname: { type: String},
+    fname: { type: String},
     course: { type: String},
     companyname: { type: String},
     salary: { type: Number},
-    image:{type:String}
+    myFile:{type:String}
 
   });
 

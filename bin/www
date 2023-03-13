@@ -9,7 +9,7 @@ var debug = require('debug')('student-list:server');
 var http = require('http');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/Student_job_Portel')
+mongoose.connect('mongodb+srv://Product:<password>@cluster0.rsmma9e.mongodb.net/?retryWrites=true&w=majority')
   .then(() => console.log('Connected!'));
 
 /**
