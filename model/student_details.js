@@ -10,8 +10,6 @@ const Student_model = new mongoose.Schema({
     course: { type: String},
     companyname: { type: String},
     salary: { type: Number},
-    myFile:{type:String}
-
   });
 
   const Student_Job_Details = mongoose.model('Student_Details', Student_model);
